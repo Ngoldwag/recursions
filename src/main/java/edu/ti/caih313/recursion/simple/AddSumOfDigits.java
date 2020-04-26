@@ -8,13 +8,10 @@ public class AddSumOfDigits{
         System.out.println("Enter a nonnegative number:");
     Scanner keyboard = new Scanner(System.in);
     int number = keyboard.nextInt();
-    if(n<0) {
-        System.out.println("I'm sorry, that number is negative");
-    } else{
         System.out.println(number + " when you add all the digits equals to " +
     AddSumOfDigits(number));
     }
-}
+
 
         public static int AddSumOfDigits(int n) {
             int result = 0;

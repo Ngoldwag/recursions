@@ -3,14 +3,15 @@ package edu.ti.caih313.recursion.simple;
 import java.util.Scanner;
 
 public class PowerOfTen {
-    System.out.println("Enter a nonnegative number:");
+    public static void main(String[] args) {
+
+        System.out.println("Enter a nonnegative number:");
         Scanner keyboard = new Scanner(System.in);
         int number = keyboard.nextInt();
         System.out.println(number + " to the power of ten is " +
          getPowerOfTen(number));
     }
 
-    public static void main(String[] args) {
     public static int getPowerOfTen(int n){
         int result;
         if(n==0){
