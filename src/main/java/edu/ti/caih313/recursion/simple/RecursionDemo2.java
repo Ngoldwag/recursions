@@ -8,7 +8,7 @@ public class RecursionDemo2 {
         Scanner keyboard = new Scanner(System.in);
         int number = keyboard.nextInt();
         System.out.println(number + " contains " +
-                getNumberOfZeros(number) + " zeros.");
+                getNumberOfZeros(number, "") + " zeros.");
     }
 
 
@@ -27,12 +27,12 @@ public class RecursionDemo2 {
             result = 0; //n has one digit that is not 0
         }else if (n % 10 == 0) {
             System.out.println("calling getNumberOfZeros with "+ (n / 10));
-            result = getNumberOfZeros(n / 10), "-"+prefix) +1;
+            result = getNumberOfZeros((n / 10), "-"+prefix) +1;
         }else {//n % 10 != 0
-            System.out.println(prefix + "calling getNumberOfZeros with " + (n / 10))
+            System.out.println(prefix + "calling getNumberOfZeros with " + (n / 10));
             result = getNumberOfZeros(n / 10, "-" + prefix);
         }
-        System.out.println(prefix+ "Exiting getNumberOFZeros with "+n )
+        System.out.println(prefix+ "Exiting getNumberOFZeros with "+n );
         return result;
     }
 }

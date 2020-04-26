@@ -3,6 +3,7 @@ package edu.ti.caih313.recursion.simple;
 import java.util.Scanner;
 
 public class RecursionDemo {
+    public static void main(String[] args) {
 
         System.out.println("Enter an integer:");
         Scanner keyboard = new Scanner(System.in);

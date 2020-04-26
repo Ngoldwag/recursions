@@ -11,7 +11,7 @@ public class PowerOfTen {
     }
 
     public static void main(String[] args) {
-    public static int getPowerOfTen(n){
+    public static int getPowerOfTen(int n){
         int result;
         if(n==0){
             result =1;
@@ -26,8 +26,9 @@ public class PowerOfTen {
             int resultKindaHalf = getPowerOfTen((n-1)/2);
             result = 10 * resultKindaHalf*resultKindaHalf
         }
-        return; result;
+        return result;
 
     }
 
 }
+
